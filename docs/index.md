@@ -1,101 +1,109 @@
 ---
 layout: group
-title: "WGFAST"
-heading: "Working Group on Fisheries Acoustics, Science and Technology"
-tagline: "Coordinating international research on acoustics for fisheries assessment and marine ecology"
+title: "WGMLEARN"
+heading: "Working Group on Machine Learning in Marine Science"
+tagline: "Pioneering the application of machine learning and artificial intelligence in marine research and ecosystem observation"
 
 # Dynamic Sidebar Configuration
 chairs:
-  - name: "Dr. Michael Jech"
-    affiliation: "Northeast Fisheries Science Center, NOAA"
-    country: "USA"
-    email: "michael.jech@noaa.gov"
-  - name: "Dr. Ana Sofia Aniceto"
+  - name: "Ketil Malde"
     affiliation: "Institute of Marine Research (IMR)"
     country: "Norway"
-    email: "ana.sofia@hi.no"
+    email: "ketil.malde@hi.no"
+  - name: "Hassan Moustahfid"
+    affiliation: "National Oceanic and Atmospheric Administration (NOAA)"
+    country: "United States"
+    email: "hassan.moustahfid@noaa.gov "
 
 events:
-  - date: "April 20-24, 2026"
-    title: "WGFAST Annual Meeting"
-    location: "Vigo, Spain (Hybrid)"
-  - date: "June 15, 2026"
-    title: "WGFAST & WGacoustic Webinar"
-    location: "Online / Teams"
-  - date: "September 18, 2026"
-    title: "Annual Science Conference Session"
-    location: "Copenhagen, Denmark"
+  - date: "November, 2026"
+    title: "WGMLEARN Annual Meeting"
+    location: "Copenhagen, DE"
+  - date: "December 04, 2026"
+    title: "Hands-on Tutorial: Foundation Models (SAM+DINO)"
+    location: "Online (GitHub Classroom)"
+  - date: "February 22-26, 2027"
+    title: "International Marine AI Hackathon"
+    location: "Bergen, Norway"
 
 quick_links:
-  - text: "ICES WGFAST Official Page"
-    url: "https://www.ices.dk/community/groups/Pages/WGFAST.aspx"
-  - text: "ICES Acoustic Data Portal"
-    url: "https://www.ices.dk/data/data-portals/Pages/Acoustic.aspx"
-  - text: "WGFAST GitHub Repositories"
-    url: "https://github.com/ices-eg/wgfast"
-  - text: "Acoustic Metadata Standards"
-    url: "https://www.ices.dk/data/data-portals/Pages/Acoustic-metadata.aspx"
+  - text: "ICES WGMLEARN Official Page"
+    url: "https://www.ices.dk/community/groups/Pages/WGMLEARN.aspx"
+  - text: "ICES Data Portals"
+    url: "https://www.ices.dk/data/data-portals/Pages/default.aspx"
+  - text: "WGMLEARN GitHub Organization"
+    url: "https://github.com/ices-eg/wgmlearn"
+  - text: "WKAAII Workshop Page"
+    url: "https://www.ices.dk/community/groups/Pages/WKAAII.aspx"
 
 publications:
   - year: "2025"
-    title: "Acoustic target strength of major marine species"
-    citation: "ICES Cooperative Research Report No. 362"
+    title: "WGMLEARN Annual Report 2024"
+    citation: "ICES Scientific Reports, 6:92"
   - year: "2024"
-    title: "WGFAST 2024 Annual Report"
-    citation: "ICES Scientific Reports, 6:41"
+    title: "A review of computer vision applications in marine science"
+    citation: "ICES Journal of Marine Science, Vol 81"
   - year: "2023"
-    title: "Guidelines for broadband acoustic data collection"
-    citation: "ICES Scientific Reports, 5:89"
+    title: "Establishing benchmark datasets for marine species classification"
+    citation: "ICES Cooperative Research Report No. 359"
 ---
 
-The **Working Group on Fisheries Acoustics, Science and Technology (WGFAST)** is the global hub for research, development, and standard setting in marine acoustics. Founded to support fisheries management and ecosystem monitoring, WGFAST coordinates international scientific efforts to observe, measure, and understand the marine environment using sound.
+The **Working Group on Machine Learning in Marine Science (WGMLEARN)** serves as the interdisciplinary hub within the International Council for the Exploration of the Sea (ICES) for integrating Artificial Intelligence (AI) and Machine Learning (ML) into marine research.
 
----
-
-## Our Mission
-
-Our primary objective is to advance the use of acoustic technologies for the observation of marine ecosystems. We establish international standards for acoustic instrumentation, data collection, and processing, ensuring that acoustic surveys around the world produce compatible, high-quality data.
-
-Our work feeds directly into stock assessments, helping to determine quotas and conservation guidelines for commercially important species like herring, mackerel, and krill, while also providing critical insights into the structure and function of marine food webs.
+We bring together marine scientists, data engineers, and ML researchers to solve complex ecological and resource-management challenges. As mainstream ML research focuses heavily on generic domains (like consumer photography and autonomous driving), WGMLEARN identifies, standardizes, and addresses the unique challenges encountered in the marine domain.
 
 ---
 
-## Key Terms of Reference (ToR)
+## Our Mission & Objectives
 
-At our recent meetings, WGFAST has prioritized several focus areas. The progress and deliverables for our current three-year cycle are detailed below:
-
-| ToR | Description | Priority | Expected Deliverable |
-| :--- | :--- | :---: | :--- |
-| **ToR A** | Standardize calibration procedures for multi-frequency and broadband echosounders. | **High** | ICES Cooperative Research Report (CRR) by late 2026. |
-| **ToR B** | Integrate acoustic and optical data (cameras/stereo-video) on autonomous platforms. | **Medium** | Joint workshop report and prototype algorithm suite on GitHub. |
-| **ToR C** | Update the ICES Acoustic Data Portal schema to support metadata for wideband and multibeam systems. | **High** | XML/JSON schema updates and deployment to production. |
-| **ToR D** | Review and model the target strength (TS) of deep-water mesopelagic organisms. | **Medium** | Peer-reviewed review paper in *ICES Journal of Marine Science*. |
+The field of AI and ML is developing at an unprecedented pace. WGMLEARN provides scientific leadership and technical guidance to ensure the ICES community can safely and robustly leverage these advanced technologies:
+* **Advice & Guidance**: We provide comments, inputs, and guidance to other ICES expert groups on the application of machine learning.
+* **Highlighting Marine-Specific Gaps**: We identify and highlight the unique technical challenges of marine data (e.g., poor light in underwater imaging, acoustic noise, high cost of annotation) that standard commercial AI models fail to address.
+* **Benchmark Datasets**: We establish high-quality, open-access, and fully annotated training sets to steer mainstream ML research towards high-value opportunities in marine science and management.
 
 ---
 
-## Core Research Areas
+## Terms of Reference (ToR) & Deliverables
 
-### 1. Broadband & Wideband Acoustics
-Broadband echosounders transmit sound over continuous frequency bands (e.g., 50 to 200 kHz) rather than at single discrete frequencies. This provides a "frequency signature" or spectrum for scattering targets, vastly improving our ability to classify species (e.g., distinguishing swimbladder fish from siphonophores or krill) without physical capture.
+WGMLEARN operates under a structured, three-year planning cycle. Our current core tasks and expected deliverables are:
 
-### 2. Autonomous Platforms & Robotics
-Marine science is shifting towards autonomous surveys. WGFAST members are deploying echosounders on:
-* **Autonomous Underwater Vehicles (AUVs)** and **Uncrewed Surface Vehicles (USVs)**.
-* **Deep-sea landers** and mooring networks.
-* **Ocean gliders** designed for long-endurance oceanographic monitoring.
-
-These platforms collect continuous acoustic data at a fraction of the cost of traditional research vessels, although they introduce unique challenges in power management, background noise, and real-time processing.
-
-### 3. Artificial Intelligence & Automated Processing
-With the explosion of continuous acoustic datasets, manual post-processing has become a major bottleneck. We are developing machine learning models to:
-* Automatically remove background noise (e.g., ship noise, turbulence, electrical interference).
-* Segment acoustic echograms to isolate pelagic schools and layers.
-* Classify targets using deep neural networks trained on multi-frequency spectra.
+| ToR | Description | Deliverables |
+| :--- | :--- | :--- |
+| **ToR A: Identify Challenges** | Develop a comprehensive list of AI/ML topics, task frameworks, and unmet challenges specific to the marine domain and potential benefits. Integrates output from WKAAII. | • A high-impact **Review Paper** in a "food-for-thought" format detailing marine ML bottlenecks. |
+| **ToR B: Coordinate Groups** | Establish communication and coordinate with other ICES working groups, research groups, and databases to explore collaboration opportunities and chart user needs. | • A comprehensive **List of Networking Contacts** and database of active marine AI collaborators. |
+| **ToR C: Organize Events** | Organize and execute 5–10 capacity-building events (tutorials, hackathons, workshops, and conference sessions) to target important challenges. | • **Tutorials**: Online learning modules and video recordings.<br>• **Hackathons**: Open-source code repositories (GitHub) and peer-reviewed manuscripts. |
 
 ---
 
-## Get Involved
+## Highlights: Unmet Challenges in Marine ML
 
-WGFAST is an open group of scientists, engineers, and technologists. Whether you are an acoustic expert, a quantitative ecologist, or a hardware manufacturer, we welcome your collaboration. 
+Under **ToR A**, we have categorized the critical areas where standard AI algorithms fall short and where specialized marine-focused research is required:
 
-Please explore our **Quick Links** on the sidebar to access our repositories and databases, or reach out to the Working Group Chairs directly to inquire about joining our annual meetings or online webinars.
+### 1. Labeling & Annotation Bottlenecks
+Traditional deep learning models require millions of high-quality labels. In marine science, expert annotation of underwater camera imagery or acoustics is extremely slow and expensive.
+* **The Marine Challenge**: High-volume, multi-modal, and hierarchical data (e.g., classifying plankton or complex benthic habitats with non-flat taxonomies).
+* **Our Solutions**: Exploring Weakly-Supervised Learning, active learning, and leveraging zero-shot computer vision models like **SAM (Segment Anything)** and **DINO** to automate labeling pipelines.
+
+### 2. Edge Computing & Robotics
+To monitor the world's oceans in real-time, AI models must be deployed directly on battery-powered robots or remote systems with highly limited internet access.
+* **The Marine Challenge**: Managing fleets of autonomous platforms (AUVs, USVs, gliders). Deploying compact, energy-efficient algorithms for real-time edge processing on satellites, drones, and LiDAR sensors.
+* **Our Solutions**: Compression techniques, model quantization, and self-optimizing deployment pipelines.
+
+### 3. Physics-Informed & Hybrid Modeling
+Purely data-driven ML models are prone to generating physically impossible predictions when presented with out-of-distribution marine data.
+* **The Marine Challenge**: Extremely limited sample sizes under edge conditions (e.g., rare species or extreme weather events).
+* **Our Solutions**: Merging physical/oceanographic/mechanistic models with data-driven ML (e.g., continuous 3D acoustic distributions, Anemoi/NERSC models) to enforce conservation laws.
+
+### 4. Marine Foundation Models
+General-purpose language or image models do not understand oceanography, acoustics, or taxonomic structures.
+* **The Marine Challenge**: Constructing specialized foundation models trained specifically on marine data.
+* **Our Solutions**: Developing pre-trained foundation models for species identification and acoustic spectrograms (e.g., the *AqQua* project for plankton).
+
+---
+
+## Get Involved with WGMLEARN
+
+WGMLEARN is an active, open, and collaborative community. Whether you are an AI/ML specialist, a marine ecologist, or an offshore software engineer, your skills are needed to steer the future of Marine AI.
+
+* Check out our **Quick Links** on the sidebar to explore our repositories, databases, and community channels.
+* Contact the Working Group Chairs directly to inquire about participating in our next annual meeting, joining an upcoming hackathon, or co-authoring a tutorial!
