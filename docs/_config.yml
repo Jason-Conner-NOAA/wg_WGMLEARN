@@ -1,0 +1,19 @@
+title: "ICES WGFAST"
+email: "info@ices.dk"
+description: "ICES Working Group on Fisheries Acoustics, Science and Technology"
+baseurl: "" # subpath of your site, e.g. /my-site
+url: "" # base hostname & protocol for your site, e.g. http://localhost:4000
+twitter_username: "ices_coop"
+github_username: "ices-eg"
+
+# Build settings
+theme: null # Custom HTML/CSS foundation rather than a gem-based theme
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+sass:
+  style: compressed
+  sass_dir: _sass
+
+

@@ -1,7 +1,8 @@
-| Category / Core Topic | Key Details, Challenges & Examples | Additional Context / References |
+| Challenge | Key Details, Challenges & Examples | Additional Context / References |
 | --- | --- | --- |
+| **🗂️ Data Quality** | • Data noise (e.g., weather/waves, small vessels) |  |
 | **📦 Data Complexity & Structure** | • Multi-modal and complex data<br>• Hierarchical (non-flat) labels | *Example:* Plankton data |
-| **🌊 Field Challenges & Robotics** | • Data quality and collection challenges under difficult conditions<br>• Managing a fleet/navy of data-collecting robots | *Examples:* Weather, small vessels, waves, autonomous platforms |
+| **🌊 Data Collection & Robotics** | • Managing a fleet/navy of data-collecting robots | autonomous platforms |
 | **⚡ Edge & Remote Solutions** | • Real-time and edge computing solutions<br>• Remote sensing and control | *Examples:* Satellite, LiDAR, drones |
 | **🤖 Advanced AI & Modeling** | • Use of LLMs<br>• Active learning<br>• Self-optimizing models (deployment in value chains) | *References:* Neil Holdsworth, comparison vs. WKAAII |
 | **🏷️ Labeling & Annotation** | • Weak labels (aggregate information)<br>• Overcoming the annotation challenge (reducing dependence, combining different datasets) | *Examples:* Acoustics reference via trawl samples over a haul<br>*Tech:* SAM+DINO, possibility networks, Active learning |

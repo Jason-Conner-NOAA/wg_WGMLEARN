@@ -1,0 +1,94 @@
+<div class="sidebar-block chair-block">
+  <h3>Group Chairs</h3>
+  {% if page.chairs %}
+    {% for chair in page.chairs %}
+      <div class="chair-info">
+        <strong>{{ chair.name }}</strong><br>
+        <span class="chair-affiliation">{{ chair.affiliation }}</span><br>
+        <span class="chair-country">{{ chair.country }}</span>
+        {% if chair.email %}
+          <br><a href="mailto:{{ chair.email }}" class="email-link">📧 Contact Chair</a>
+        {% endif %}
+      </div>
+    {% endfor %}
+  {% else %}
+    <div class="chair-info">
+      <strong>Dr. Michael Jech</strong><br>
+      <span class="chair-affiliation">NOAA Fisheries</span><br>
+      <span class="chair-country">USA</span>
+    </div>
+  {% endif %}
+</div>
+
+<div class="sidebar-block events-block">
+  <h3>Upcoming Events</h3>
+  {% if page.events %}
+    <ul class="sidebar-list">
+      {% for event in page.events %}
+        <li>
+          <div class="event-date">{{ event.date }}</div>
+          <div class="event-title"><strong>{{ event.title }}</strong></div>
+          <div class="event-location">{{ event.location }}</div>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <ul class="sidebar-list">
+      <li>
+        <div class="event-date">April 20-24, 2026</div>
+        <div class="event-title"><strong>WGFAST Annual Meeting</strong></div>
+        <div class="event-location">Vigo, Spain</div>
+      </li>
+      <li>
+        <div class="event-date">June 15, 2026</div>
+        <div class="event-title"><strong>Joint WGFAST & WGacoustic Webinar</strong></div>
+        <div class="event-location">Online</div>
+      </li>
+    </ul>
+  {% endif %}
+</div>
+
+<div class="sidebar-block links-block">
+  <h3>Quick Links</h3>
+  {% if page.quick_links %}
+    <ul class="sidebar-list links-list">
+      {% for link in page.quick_links %}
+        <li><a href="{{ link.url }}" target="_blank" rel="noopener">🔗 {{ link.text }}</a></li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <ul class="sidebar-list links-list">
+      <li><a href="https://www.ices.dk/community/groups/Pages/WGFAST.aspx" target="_blank" rel="noopener">🔗 ICES WGFAST SharePoint</a></li>
+      <li><a href="https://www.ices.dk/data/data-portals/Pages/Acoustic.aspx" target="_blank" rel="noopener">🔗 ICES Acoustic Data Portal</a></li>
+      <li><a href="https://github.com/ices-eg/wgfast" target="_blank" rel="noopener">🔗 WGFAST GitHub Organization</a></li>
+    </ul>
+  {% endif %}
+</div>
+
+<div class="sidebar-block pubs-block">
+  <h3>Latest Publications</h3>
+  {% if page.publications %}
+    <ul class="sidebar-list">
+      {% for pub in page.publications %}
+        <li>
+          <span class="pub-year">[{{ pub.year }}]</span>
+          <span class="pub-title"><em>{{ pub.title }}</em></span><br>
+          <span class="pub-meta">{{ pub.citation }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <ul class="sidebar-list">
+      <li>
+        <span class="pub-year">[2025]</span>
+        <span class="pub-title"><em>Acoustic target strength of major marine species</em></span><br>
+        <span class="pub-meta">ICES Cooperative Research Report No. 362</span>
+      </li>
+      <li>
+        <span class="pub-year">[2024]</span>
+        <span class="pub-title"><em>WGFAST 2024 Annual Report</em></span><br>
+        <span class="pub-meta">ICES Scientific Reports, 6:41</span>
+      </li>
+    </ul>
+  {% endif %}
+</div>
